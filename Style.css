@@ -241,6 +241,49 @@ p {
   font-size: 1rem;
   line-height: 1.4;
 }
-.overlay-text_pic_bottom{
-  
+
+.gallery-section {
+  display: grid;
+  grid-template-columns: 1fr 2fr; /* text on left, slider on right */
+  gap: 20px;
+  align-items: center;
+  padding: 40px;
+}
+
+.gallery-text .label {
+  font-size: 14px;
+  color: #ff9800;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.gallery-text h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.explore-link {
+  color: #ff9800;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.gallery-slider {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  gap: 20px;
+  padding-bottom: 10px;
+}
+
+.slide {
+  flex: 0 0 auto;
+  scroll-snap-align: start;
+}
+
+.slide img {
+  width: 600px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
 }
