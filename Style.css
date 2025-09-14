@@ -50,7 +50,7 @@ nav a:hover {
 /* ----------- Hero Section ----------- */
 .hero {
   height: 100vh;   /* full screen height */
-  background: url("images/beautiful-sunset-forest-lake.jpg")
+  background: url("images/Background_image_\(home\ pag\).jpg")
               no-repeat center center/cover;
   display: flex;
   align-items: center;
@@ -179,4 +179,68 @@ nav a:hover {
   color: #555;
   max-width: 700px;
   margin: 0 auto;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* space between rows */
+  max-width: 2200px;
+  margin: 5%;
+}
+
+.top img {
+  width: 100%;
+  border-radius: 30px;
+}
+
+.bottom {
+  display: flex;
+  gap: 20px; /* space between bottom images */
+}
+
+.bottom img {
+  width: 100%;
+  border-radius: 30px;
+}
+
+p {
+  font-family: Arial, sans-serif;
+  margin-top: 10px;
+  line-height: 1.4;
+}
+.image-container {
+  position: relative; /* allows absolute positioning inside */
+  display: inline-block;
+  width: 100%; /* adjust as needed */
+}
+
+.image-container img {
+  width: 100%;
+  display: block;
+  border-radius:40px;
+}
+
+.overlay-text {
+  position: absolute;
+  bottom: 20px; /* distance from bottom of image */
+  left: 20px;   /* distance from left of image */
+  color: white;
+  background: rgba(0, 0, 0, 0.5); /* semi-transparent background for readability */
+  padding: 15px;
+  border-radius: 5px;
+  max-width: 80%;
+}
+
+.overlay-text h2 {
+  margin: 0 0 10px;
+  font-size: 1.5rem;
+}
+
+.overlay-text p {
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.4;
+}
+.overlay-text_pic_bottom{
+  
 }
