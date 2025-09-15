@@ -5,6 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Travel Blogs</title>
   <link rel="stylesheet" href="style.css">
+  <style>
+    /* Enable smooth scrolling */
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
 </head>
 <body>
   <!-- Header -->
@@ -12,94 +18,139 @@
     <h1 class="logo">Travel Blogs</h1>
     <nav>
       <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Destinations</a></li>
-        <li><a href="#">Gallery</a></li>
-        <li><a href="#">Packages</a></li>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#destinations">Destinations</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#packages">Packages</a></li>
       </ul>
     </nav>
   </header>
 
   <!-- Hero Section -->
-  <section class="hero">
+  <section id="home" class="hero">
     <div class="hero-content">
       <h2>Weaving Your Dreams<br>into Unforgettable Adventures</h2>
       <p>Discover the captivating allure of wonders, from stunning landscapes to vibrant culture, on an unforgettable journey.</p>
-      <a href="#" class="btn">Booking Now</a>
-      <a href="#" class="btn-outline">Explore More ↓</a>
+      <a href="#packages" class="btn">Booking Now</a>
+      <a href="#destinations" class="btn-outline">Explore More ↓</a>
     </div>
   </section>
 
-  <section class="intro">
-  <div class="intro-text">
-    <h3>It all began with a single journey</h3>
-    <p>A trip to the land of fire and ice that sparked a profound love for Iceland. Enchanted by its rugged beauty and rich culture, we knew we had found something truly special.</p>
-  </div>
-</section>
+  <!-- Intro Section -->
+  <section id="intro" class="intro">
+    <div class="intro-text">
+      <h3>It all began with a single journey</h3>
+      <p>A trip to the land of fire and ice that sparked a profound love for Iceland. Enchanted by its rugged beauty and rich culture, we knew we had found something truly special.</p>
+    </div>
+  </section>
 
-<section class="stats">
-  <div class="stat-box">
-    <h4>95%</h4>
-    <p>Customer Satisfaction</p>
-  </div>
-  <div class="stat-box">
-    <h4>72+</h4>
-    <p>Popular Destinations</p>
-  </div>
-  <div class="stat-box">
-    <h4>250+</h4>
-    <p>Experienced Guides</p>
-  </div>
-</section>
+  <!-- Stats Section -->
+  <section class="stats">
+    <div class="stat-box">
+      <h4>95%</h4>
+      <p>Customer Satisfaction</p>
+    </div>
+    <div class="stat-box">
+      <h4>72+</h4>
+      <p>Popular Destinations</p>
+    </div>
+    <div class="stat-box">
+      <h4>250+</h4>
+      <p>Experienced Guides</p>
+    </div>
+  </section>
 
-<section class="destinations">
-  <h3>[Destinations]</h3>
-  <p class="tagline">A unique blend of adventure, culture, and natural wonders</p>
-  <p class="description">Discover a fusion of adventure, culture and scenic beauty across our diverse destinations, offering unforgettable experiences at every turn.</p>
-</section>
+  <!-- Destinations Section -->
+  <section id="destinations" class="destinations">
+    <h3>[Destinations]</h3>
+    <p class="tagline">A unique blend of adventure, culture, and natural wonders</p>
+    <p class="description">Discover a fusion of adventure, culture and scenic beauty across our diverse destinations, offering unforgettable experiences at every turn.</p>
+  </section>
 
-<div class="container">
-  <div class="image-container">
-  <img src="images/pic_1.jpg" alt="Askja Caldera">
-  <div class="overlay-text">
-    <h2>Askja Caldera</h2>
-    <p>A glimpse into Iceland's raw natural beauty and geological wonders. 
-       From its dramatic crater lakes to its desolate volcanic landscapes, 
-       this destination promises an unforgettable adventure.</p>
-  </div>
-</div>
+  <div class="container">
+    <div class="image-container">
+      <img src="images/pic_1.jpg" alt="Askja Caldera">
+      <div class="overlay-text">
+        <h2>Askja Caldera</h2>
+        <p>A glimpse into Iceland's raw natural beauty and geological wonders. 
+           From its dramatic crater lakes to its desolate volcanic landscapes, 
+           this destination promises an unforgettable adventure.</p>
+      </div>
+    </div>
  
- <div class="bottom">
-  <div class="image-container">
-    <img src="images/pic_2.jpg" alt="Mossy Mountain Hillside">
-    <div class="overlay-text">
-      <h2>Mossy Mountain Hillside</h2>
-      <p>A sense of peace and serenity...</p>
+    <div class="bottom">
+      <div class="image-container">
+        <img src="images/pic_2.jpg" alt="Mossy Mountain Hillside">
+        <div class="overlay-text">
+          <h2>Mossy Mountain Hillside</h2>
+          <p>A sense of peace and serenity...</p>
+        </div>
+      </div>
+
+      <div class="image-container">
+        <img src="images/pic_3.jpg" alt="Reynisfjara Black Sand Beach">
+        <div class="overlay-text">
+          <h2>Reynisfjara Black Sand Beach</h2>
+          <p>A volcanic shore, towering cliffs...</p>
+        </div>
+      </div>
     </div>
   </div>
 
-  <div class="image-container">
-    <img src="images/pic_3.jpg" alt="Reynisfjara Black Sand Beach">
-    <div class="overlay-text">
-      <h2>Reynisfjara Black Sand Beach</h2>
-      <p>A volcanic shore, towering cliffs...</p>
+  <!-- Gallery Section -->
+  <section id="gallery" class="gallery-section">
+    <div class="gallery-text">
+      <span class="label">[Galleries]</span>
+      <h2>A visual journey through the lens, one snapshot at a time capturing the essence of our travel adventures around the world.</h2>
+      <a href="#" class="explore-link">Explore More →</a>
     </div>
-  </div>
-</div>
 
-<section class="gallery-section">
-  <div class="gallery-text">
-    <span class="label">[Galleries]</span>
-    <h2>A visual journey through the lens, one snapshot at a time capturing the essence of our travel adventures around the world.</h2>
-    <a href="#" class="explore-link">Explore More →</a>
-  </div>
+    <div class="gallery-slider">
+      <div class="slide"><img src="images/scroll_image_1.jpg" alt="Rock formation"></div>
+      <div class="slide"><img src="images/scroll_image_2.jpg" alt="Mountain view"></div>
+      <div class="slide"><img src="images/scroll_image_3.jpg" alt="Rock formation"></div>
+      <div class="slide"><img src="images/scroll_image_4.jpg" alt="Mountain view"></div>
+    </div>
+  </section>
 
-  <div class="gallery-slider">
-    <div class="slide"><img src="images/scroll_image_1.jpg" alt="Rock formation"></div>
-    <div class="slide"><img src="images/scroll_image_2.jpg" alt="Mountain view"></div>
-    <div class="slide"><img src="images/scroll_image_3.jpg" alt="Rock formation"></div>
-    <div class="slide"><img src="images/scroll_image_4.jpg" alt="Mountain view"></div>
-  </div>
-</section>
+  <!-- Packages Section
+  <section id="packages" class="packages">
+    <h2>Our Travel Packages</h2>
+    <p>Explore curated experiences and special offers tailored for your next journey.</p>
+  </section> -->
+
+  <section class="reservation">
+    <span class="label">[Reservation]</span>
+    <h2>Secure spot for an unforgettable journey<br>
+        through Iceland's beauty and unique charms</h2>
+
+    <div class="reservation-content">
+      <!-- Left: Image -->
+      <div class="image-box">
+        <img src="images/price_button.jpg" alt="Lavender Dreams">
+      </div>
+
+      <!-- Right: Details -->
+      <div class="details">
+        <h3>The Lavender Dreams</h3>
+        <p>Explore botanical gardens, geothermal parks, and coastal vistas, each painting a unique canvas of natural splendor.</p>
+
+        <!-- Info tags -->
+        <div class="tags">
+          <span>5 Days</span>
+          <span>Mar - Oct</span>
+          <span>Easy</span>
+          <span>Keflavik Airport</span>
+          <span>Flexible</span>
+        </div>
+
+        <!-- Price + Button -->
+        <div class="price">
+          <p>From <strong>$1,567</strong></p>
+          <a href="#" class="btn">Booking Now</a>
+        </div>
+      </div>
+    </div>
+  </section>
 </body>
 </html>
