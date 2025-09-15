@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Booking Page</title>
+  <link rel="stylesheet" href="booking_page.css">
+</head>
+<body>
+
+  <section class="booking">
+    <h2>Book Your Adventure</h2>
+    <p>Fill in your details to secure your spot for an unforgettable journey.</p>
+
+    <form class="booking-form">
+      <!-- Customer details -->
+      <label for="name">Full Name</label>
+      <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+      <label for="phone">Phone Number</label>
+      <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+
+      <label for="email">Email Address</label>
+      <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+      <!-- Booking details -->
+      <label for="destination">Destination</label>
+      <select id="destination" name="destination" required>
+        <option value="">Select a destination</option>
+        <option value="askja">Askja Caldera</option>
+        <option value="mossy">Mossy Mountain Hillside</option>
+        <option value="reynisfjara">Reynisfjara Black Sand Beach</option>
+      </select>
+
+      <label for="date">Travel Date</label>
+      <input type="date" id="date" name="date" required>
+
+      <label for="people">Number of People</label>
+      <input type="number" id="people" name="people" min="1" max="20" value="1" required>
+
+      <!-- Submit -->
+      <button type="submit" class="btn">Confirm Booking</button>
+    </form>
+  </section>
+
+</body>
+</html>
