@@ -4,8 +4,8 @@ html, body {
   margin: 0;
   padding: 0;
   height: 100%; /* Ensure full height */
-  background-image: url(images/pic_1.jpg);
-  background-size: cover; /* ✅ Changed from 'contain' to 'cover' */
+  background-image: url('images/pic_1-min.jpg'); /* Fixed path */
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   font-family: "Delius", cursive;
@@ -32,10 +32,12 @@ html, body {
   position: relative;
   z-index: 2;
   max-width: 600px;
-  width: 100%;
+  width: 90%; /* Added for responsiveness */
   text-align: center;
   color: #fff;
   animation: fadeIn 1s ease-in-out;
+  margin: 0 auto; /* Center on small screens */
+  padding: 0 15px; /* Added padding for mobile */
 }
 
 .booking-content h2 {
@@ -64,6 +66,9 @@ html, body {
 .booking-form label {
   font-weight: bold;
   color: #333;
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }
 
 .booking-form input,
@@ -74,6 +79,7 @@ html, body {
   font-size: 14px;
   width: 100%;
   transition: all 0.3s ease;
+  font-family: "Delius", cursive;
 }
 
 .booking-form input:focus,
@@ -93,6 +99,11 @@ html, body {
   border-radius: 30px;
   cursor: pointer;
   transition: transform 0.2s ease, background 0.3s ease;
+  font-family: "Delius", cursive;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
 }
 
 .booking-form .btn:hover {
@@ -107,8 +118,26 @@ html, body {
 }
 
 /* Responsive */
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   .booking-content h2 {
     font-size: 24px;
+  }
+  
+  .booking-form {
+    padding: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .booking-content h2 {
+    font-size: 20px;
+  }
+  
+  .booking-form {
+    padding: 1rem;
+  }
+  
+  .booking-form label {
+    font-size: 14px;
   }
 }

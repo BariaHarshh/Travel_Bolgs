@@ -5,12 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Travel Blogs</title>
   <link rel="stylesheet" href="style.css">
-  <style>
-    /* Enable smooth scrolling */
-    html {
-      scroll-behavior: smooth;
-    }
-  </style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
   <!-- Header -->
@@ -22,7 +17,11 @@
         <li><a href="#destinations">Destinations</a></li>
         <li><a href="#gallery">Gallery</a></li>
         <li><a href="#packages">Packages</a></li>
+        <li><a href="booking_page.html">Book Now</a></li>
       </ul>
+      <div class="mobile-menu-btn">
+        <i class="fas fa-bars"></i>
+      </div>
     </nav>
   </header>
 
@@ -31,8 +30,10 @@
     <div class="hero-content">
       <h2>Weaving Your Dreams<br>into Unforgettable Adventures</h2>
       <p>Discover the captivating allure of wonders, from stunning landscapes to vibrant culture, on an unforgettable journey.</p>
-      <a href="booking_page.html" class="btn">Booking Now</a>
-      <a href="#destinations" class="btn-outline">Explore More ↓</a>
+      <div class="hero-buttons">
+        <a href="booking_page.html" class="btn">Booking Now</a>
+        <a href="#destinations" class="btn-outline">Explore More ↓</a>
+      </div>
     </div>
   </section>
 
@@ -69,7 +70,7 @@
 
   <div class="container">
     <div class="image-container">
-      <img src="images/pic_1.jpg" alt="Askja Caldera">
+      <img src="images/pic_1-min.jpg" alt="Askja Caldera">
       <div class="overlay-text">
         <h2>Askja Caldera</h2>
         <p>A glimpse into Iceland's raw natural beauty and geological wonders. 
@@ -80,7 +81,7 @@
  
     <div class="bottom">
       <div class="image-container">
-        <img src="images/pic_2.jpg" alt="Mossy Mountain Hillside">
+        <img src="images/pic_2-min.jpg" alt="Mossy Mountain Hillside">
         <div class="overlay-text">
           <h2>Mossy Mountain Hillside</h2>
           <p>A sense of peace and serenity...</p>
@@ -88,7 +89,7 @@
       </div>
 
       <div class="image-container">
-        <img src="images/pic_3.jpg" alt="Reynisfjara Black Sand Beach">
+        <img src="images/pic_3-min.jpg" alt="Reynisfjara Black Sand Beach">
         <div class="overlay-text">
           <h2>Reynisfjara Black Sand Beach</h2>
           <p>A volcanic shore, towering cliffs...</p>
@@ -102,7 +103,7 @@
     <div class="gallery-text">
       <span class="label">[Galleries]</span>
       <h2>A visual journey through the lens, one snapshot at a time capturing the essence of our travel adventures around the world.</h2>
-      <a href="#" class="explore-link">Explore More →</a>
+      <a href="#gallery" class="explore-link">Explore More →</a>
     </div>
 
     <div class="gallery-slider">
@@ -113,12 +114,7 @@
     </div>
   </section>
 
-  <!-- Packages Section
-  <section id="packages" class="packages">
-    <h2>Our Travel Packages</h2>
-    <p>Explore curated experiences and special offers tailored for your next journey.</p>
-  </section> -->
-
+  <!-- Reservation Section -->
   <section class="reservation">
     <span class="label">[Reservation]</span>
     <h2>Secure spot for an unforgettable journey<br>
@@ -152,121 +148,145 @@
       </div>
     </div>
   </section>
+  
+  <!-- Packages Section -->
   <section id="packages" class="packages">
-  <div class="packages-header">
-    <span class="label">[Packages]</span>
-    <h2>Choose our range of expertly crafted packages</h2>
-    <p>
-      Whether you're seeking awe-inspiring landscapes, thrilling outdoor adventures,
-      or immersive cultural experiences, we have the perfect itinerary for you.
-    </p>
-  </div>
-
-  <div class="package-grid">
-    <!-- Card 1 -->
-    <div class="package-card">
-      <img src="images/card_pic1.jpg" alt="Auroras">
-      <div class="overlay">
-        <a href="booking_page.html" class="book-btn">Book Seat</a>
-      </div>
-      <div class="package-info">
-        <span class="tag">5 Days, 4 Nights</span>
-        <span class="price">$850/Night</span>
-        <h3>Catching the Auroras</h3>
-        <p>Mesmerizing journey to witness the enchanting Aurora Borealis 
-        in the captivating landscapes of Iceland.</p>
-      </div>
+    <div class="packages-header">
+      <span class="label">[Packages]</span>
+      <h2>Choose our range of expertly crafted packages</h2>
+      <p>
+        Whether you're seeking awe-inspiring landscapes, thrilling outdoor adventures,
+        or immersive cultural experiences, we have the perfect itinerary for you.
+      </p>
     </div>
 
-    <!-- Card 2 -->
-    <div class="package-card">
-      <img src="images/card_pic2.jpg" alt="Golden Circle">
-      <div class="overlay">
-        <a href="booking_page.html" class="book-btn">Book Seat</a>
+    <div class="package-grid">
+      <!-- Card 1 -->
+      <div class="package-card">
+        <img src="images/card_pic1.jpg" alt="Auroras">
+        <div class="overlay">
+          <a href="booking_page.html" class="book-btn">Book Seat</a>
+        </div>
+        <div class="package-info">
+          <span class="tag">5 Days, 4 Nights</span>
+          <span class="price">$850/Night</span>
+          <h3>Catching the Auroras</h3>
+          <p>Mesmerizing journey to witness the enchanting Aurora Borealis 
+          in the captivating landscapes of Iceland.</p>
+        </div>
       </div>
-      <div class="package-info">
-        <span class="tag">3 Days, 2 Nights</span>
-        <span class="price">$1,235/Night</span>
-        <h3>Golden Circle Adventure</h3>
-        <p>Explore geysers, waterfalls, and volcanic landscapes in 
-        Iceland’s most famous route.</p>
-      </div>
-    </div>
 
-    <!-- Card 3 -->
-    <div class="package-card">
-      <img src="images/card_pic3.jpg" alt="Glacier Expedition">
-      <div class="overlay">
-        <a href="booking_page.html" class="book-btn">Book Seat</a>
+      <!-- Card 2 -->
+      <div class="package-card">
+        <img src="images/card_pic2.jpg" alt="Golden Circle">
+        <div class="overlay">
+          <a href="booking_page.html" class="book-btn">Book Seat</a>
+        </div>
+        <div class="package-info">
+          <span class="tag">3 Days, 2 Nights</span>
+          <span class="price">$1,235/Night</span>
+          <h3>Golden Circle Adventure</h3>
+          <p>Explore geysers, waterfalls, and volcanic landscapes in 
+          Iceland's most famous route.</p>
+        </div>
       </div>
-      <div class="package-info">
-        <span class="tag">7 Days, 6 Nights</span>
-        <span class="price">$540/Night</span>
-        <h3>Glacier Expedition</h3>
-        <p>Embark on an unforgettable trek through icy landscapes 
-        and breathtaking glaciers.</p>
+
+      <!-- Card 3 -->
+      <div class="package-card">
+        <img src="images/card_pic3.jpg" alt="Glacier Expedition">
+        <div class="overlay">
+          <a href="booking_page.html" class="book-btn">Book Seat</a>
+        </div>
+        <div class="package-info">
+          <span class="tag">7 Days, 6 Nights</span>
+          <span class="price">$540/Night</span>
+          <h3>Glacier Expedition</h3>
+          <p>Embark on an unforgettable trek through icy landscapes 
+          and breathtaking glaciers.</p>
+        </div>
+      </div>
+      
+      <!-- Card 4 -->
+      <div class="package-card">
+        <img src="images/card_pic4.jpg" alt="Northern Lights">
+        <div class="overlay">
+          <a href="booking_page.html" class="book-btn">Book Seat</a>
+        </div>
+        <div class="package-info">
+          <span class="tag">4 Days, 3 Nights</span>
+          <span class="price">$920/Night</span>
+          <h3>Northern Lights Experience</h3>
+          <p>Chase the magical aurora borealis across Iceland's dark winter skies.</p>
+        </div>
       </div>
     </div>
-    <!-- Card 4 -->
-    <div class="package-card">
-      <img src="images/card_pic4.jpg" alt="Golden Circle">
-      <div class="overlay">
-        <a href="booking_page.html" class="book-btn">Book Seat</a>
-      </div>
-      <div class="package-info">
-        <span class="tag">3 Days, 2 Nights</span>
-        <span class="price">$1,235/Night</span>
-        <h3>Golden Circle Adventure</h3>
-        <p>Explore geysers, waterfalls, and volcanic landscapes in 
-        Iceland’s most famous route.</p>
-      </div>
-    </div>
-    
-  </div>
-</section>
+  </section>
 
   <!-- Footer Section -->
-<footer class="footer">
-  <div class="footer-content">
-    <h2>Find the perfect trip for you and discover<br>extraordinary adventures with us!</h2>
-    <p>Embark on a journey of exploration and excitement as we guide you towards unforgettable experiences across the globe.</p>
-    <a href="#" class="btn">Get Started →</a>
-  </div>
-
-  <div class="footer-columns">
-    <div class="footer-column">
-      <h3>SNAELAND</h3>
-      <p>Your gateway to the extraordinary beauty, culture, and exhilarating adventures awaiting in the captivating landscapes of Iceland.</p>
+  <footer class="footer">
+    <div class="footer-content">
+      <h2>Find the perfect trip for you and discover<br>extraordinary adventures with us!</h2>
+      <p>Embark on a journey of exploration and excitement as we guide you towards unforgettable experiences across the globe.</p>
+      <a href="booking_page.html" class="btn">Get Started →</a>
     </div>
 
-    <div class="footer-column">
-      <h3>Navigations</h3>
-      <p><a href="#">Home</a></p>
-      <p><a href="#">Destinations</a></p>
-      <p><a href="#">Travel Packages</a></p>
-      <p><a href="#">Gallery</a></p>
+    <div class="footer-columns">
+      <div class="footer-column">
+        <h3>SNAELAND</h3>
+        <p>Your gateway to the extraordinary beauty, culture, and exhilarating adventures awaiting in the captivating landscapes of Iceland.</p>
+      </div>
+
+      <div class="footer-column">
+        <h3>Navigations</h3>
+        <p><a href="#home">Home</a></p>
+        <p><a href="#destinations">Destinations</a></p>
+        <p><a href="#packages">Travel Packages</a></p>
+        <p><a href="#gallery">Gallery</a></p>
+      </div>
+
+      <div class="footer-column">
+        <h3>Social</h3>
+        <p><a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i> Instagram</a></p>
+        <p><a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i> Twitter</a></p>
+        <p><a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i> YouTube</a></p>
+      </div>
+
+      <div class="footer-column">
+        <h3>Contact Us</h3>
+        <p><i class="fas fa-envelope"></i> travel@snaeland.io</p>
+        <p><i class="fas fa-phone"></i> (704) 555-0127</p>
+        <p><i class="fas fa-map-marker-alt"></i> 2118 Thornridge Cir. Syracuse, Connecticut 35624</p>
+      </div>
     </div>
 
-    <div class="footer-column">
-      <h3>Social</h3>
-      <p><a href="#">Instagram</a></p>
-      <p><a href="#">X</a></p>
-      <p><a href="#">YouTube</a></p>
+    <div class="footer-bottom">
+      <a href="#">Privacy Policy</a> | <a href="#">Terms & Conditions</a>
+      <p>© SNAELAND 2024. All Rights Reserved</p>
     </div>
+  </footer>
 
-    <div class="footer-column">
-      <h3>Contact Us</h3>
-      <p>travel@snaeland.io</p>
-      <p>(704) 555-0127</p>
-      <p>2118 Thornridge Cir. Syracuse, Connecticut 35624</p>
-    </div>
-  </div>
-
-  <div class="footer-bottom">
-    <a href="#">Privacy Policy</a> | <a href="#">Terms & Conditions</a>
-    <p>© SNAELAND 2024. All Rights Reserved</p>
-  </div>
-</footer>
-
+  <script>
+    // Mobile menu toggle
+    document.querySelector('.mobile-menu-btn').addEventListener('click', function() {
+      document.querySelector('nav ul').classList.toggle('show');
+    });
+    
+    // Smooth scrolling for navigation links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const targetId = this.getAttribute('href');
+        if (targetId === '#') return;
+        
+        const targetElement = document.querySelector(targetId);
+        if (targetElement) {
+          window.scrollTo({
+            top: targetElement.offsetTop - 80,
+            behavior: 'smooth'
+          });
+        }
+      });
+    });
+  </script>
 </body>
 </html>
