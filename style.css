@@ -50,7 +50,7 @@ nav a:hover {
 /* ----------- Hero Section ----------- */
 .hero {
   height: 100vh;
-  background: url("images/background_image_\(home\ pag\)-min.jpg")
+  background: url("images/background_image.jpg")
               no-repeat center center/cover;
   display: flex;
   align-items: center;
