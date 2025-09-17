@@ -1,60 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Booking Page</title>
   <link rel="stylesheet" href="booking_page.css">
-
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
 <body>
-
-  <!-- Booking Section -->
+  
   <section class="booking">
-    <div class="booking-container">
-      <h2>Book Your Adventure</h2>
-      <form action="save_booking.php" method="POST">
-        
-        <div class="form-group">
-          <label for="name">Full Name</label>
-          <input type="text" id="name" name="name" placeholder="Enter your full name" required>
-        </div>
+    <div class="overlay"></div>
+    <div class="booking-content">
+      <h2><i class="fa-solid fa-plane-departure"></i> Book Your Adventure</h2>
+      <p>Fill in your details to secure your spot for an unforgettable journey.</p>
 
-        <div class="form-group">
-          <label for="email">Email Address</label>
-          <input type="email" id="email" name="email" placeholder="Enter your email" required>
-        </div>
+      <!-- Updated form with action + method -->
+      <form class="booking-form" action="save_booking.php" method="POST">
+        <label for="name"><i class="fa-solid fa-user"></i> Full Name</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required>
 
-        <div class="form-group">
-          <label for="date">Travel Date</label>
-          <input type="date" id="date" name="date" required>
-        </div>
+        <label for="phone"><i class="fa-solid fa-phone"></i> Phone Number</label>
+        <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
 
-        <div class="form-group">
-          <label for="people">Number of People</label>
-          <input type="number" id="people" name="people" min="1" placeholder="e.g. 2" required>
-        </div>
+        <label for="email"><i class="fa-solid fa-envelope"></i> Email Address</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
 
-        <div class="form-group">
-          <label for="package">Select Package</label>
-          <select id="package" name="package" required>
-            <option value="">-- Select a Package --</option>
-            <option value="Auroras">Catching the Auroras</option>
-            <option value="Golden Circle">Golden Circle Adventure</option>
-            <option value="Glacier">Glacier Expedition</option>
-            <option value="Lavender">Lavender Dreams</option>
-          </select>
-        </div>
+        <label for="destination"><i class="fa-solid fa-map-marker-alt"></i> Destination</label>
+        <select id="destination" name="destination" required>
+          <option value="">Select a destination</option>
+          <option value="Askja Caldera">Askja Caldera</option>
+          <option value="Mossy Mountain Hillside">Mossy Mountain Hillside</option>
+          <option value="Reynisfjara Black Sand Beach">Reynisfjara Black Sand Beach</option>
+          <option value="Auroras">Auroras</option>
+          <option value="Golden Circle">Golden Circle</option>
+          <option value="Glacier Expedition">Glacier Expedition</option>
+        </select>
 
-        <div class="form-group">
-          <label for="message">Special Requests</label>
-          <textarea id="message" name="message" rows="4" placeholder="Any additional requests..."></textarea>
-        </div>
+        <label for="date"><i class="fa-solid fa-calendar-days"></i> Travel Date</label>
+        <input type="date" id="date" name="date" required>
 
-        <div class="form-actions">
-          <button type="submit" class="btn">Submit Booking</button>
-          <a href="index.html" class="btn-outline">Cancel</a>
-        </div>
+        <label for="people"><i class="fa-solid fa-users"></i> Number of People</label>
+        <input type="number" id="people" name="people" min="1" max="20" value="1" required>
 
+        <button type="submit" class="btn"><i class="fa-solid fa-check"></i> Confirm Booking</button>
       </form>
     </div>
   </section>
