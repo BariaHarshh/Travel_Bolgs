@@ -577,6 +577,41 @@ nav a:hover {
     font-size: 16px;
   }
 }
+/* Mobile Fix for Destinations Images */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    margin: 2%;
+  }
+
+  .bottom {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .image-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+  }
+
+  .overlay-text {
+    font-size: 14px;
+    padding: 10px;
+    bottom: 10px;
+    left: 10px;
+    max-width: 90%;
+  }
+
+  .overlay-text h2 {
+    font-size: 18px;
+  }
+
+  .overlay-text p {
+    font-size: 14px;
+  }
+}
+
 /* Hide menu on mobile */
 nav ul {
   display: flex;
